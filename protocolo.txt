@@ -1,0 +1,39 @@
+RANKING
+
+RANKINGREPLY
+OK
+ranking : String
+
+ENTRARNOJOGO
+nome : String
+
+ENTRARNOJOGOREPLY
+OK, ERRO
+
+SAIRDOJOGO
+
+SAIRDOJOGOREPLY
+OK, ERRO
+
+VEZDEJOGAR (é assíncrono. Servidor avisa jogador de sua vez)
+-
+
+STATUS (é assíncrono. Servidor envia atualização do jogo)
+-
+tabuleiro : String
+fimDoJogo:  Boolean
+mensagem : String //ultima jogada (x, y), quem jogou, resultado
+
+JOGADA
+-
+x : Integer
+y : Integer
+
+JOGADAREPLY
+OK, PARAMERROR
+resultado: TiroEnum
+
+//depois de enviar JOGADAREPLY, envia o STATUS
+
+
+
